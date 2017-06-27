@@ -1,0 +1,26 @@
+<p>
+  my-new-component works!
+</p>
+
+<h6>{{title}}</h6>
+
+<button [disabled]="buttonStatus == 'disabled'">My Button</button>
+
+<ul>
+  <li *ngFor = "let item of myColorArr">{{item}}</li>
+</ul>
+
+<div *ngIf = "name; then tmpl1 else tmpl2">My name is {{name}}</div>
+
+<ng-template #tmpl1>Name is {{name}}</ng-template>
+<ng-template #tmpl2>No name available</ng-template>
+
+<img src="{{ angularLogo }}" alt="">
+<img bind-src="angularLogo" alt="bind src">
+<img [src]=angularLogo alt="Angular Logo">
+
+
+<button (click)="myEvent($event)">My Event Button</button>
+<div [class.orange]="orangeClass"></div>
+
+
